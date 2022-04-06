@@ -24,9 +24,9 @@ function App() {
     }, [])
 
     if (error) {
-        return <div align={'center'}>Ошибка: {error.message}</div>;
+        return <div className="message">Ошибка: {error.message}</div>;
     } else if (!isLoaded) {
-        return <div>Загрузка данных</div>;
+        return <div className="message">Загрузка данных</div>;
     } else {
 
         let projects = [];
